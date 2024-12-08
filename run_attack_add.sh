@@ -13,5 +13,5 @@
 
 module load cuda/11.1
 source activate yolov7
-cd yolov7_main
+cd yolov7
 srun python attack_add.py --cases cars --eps 0.005 0.005 0.005 0.005 --rds 20 40 60 80

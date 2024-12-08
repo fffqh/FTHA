@@ -13,8 +13,8 @@
 
 module load cuda/11.1
 source activate yolov7
-cd yolov7_main
+cd yolov7
 
-for f in /share/home/tj14034/data/fqh/code/advTracker/yolov7_main/inference/multi/output_add_*/ ; do
+for f in ./yolov7/inference/multi/output_add_*/ ; do
 srun python detect.py --source $f --classes 0 2 5 7
 done

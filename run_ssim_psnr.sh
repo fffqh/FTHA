@@ -17,6 +17,6 @@ module load cuda/11.1
 source activate yolov7
 cd yolov7_main
 srun python case_ssim_psnr.py \
-    --r '/share/home/tj14034/data/fqh/code/advTracker/yolov7_main/inference/cross/origin/' \
-    --i '/share/home/tj14034/data/fqh/code/advTracker/yolov7_main/inference/cross/output_mov_0.001_200/' \
-    --o '/share/home/tj14034/data/fqh/code/advTracker/yolov7_main/inference/cross/output_mov_0.001_200/'
+    --r './yolov7/inference/cross/origin/' \
+    --i './yolov7/inference/cross/output_mov_0.001_200/' \
+    --o './yolov7/inference/cross/output_mov_0.001_200/'

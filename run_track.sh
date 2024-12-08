@@ -15,18 +15,6 @@ module load cuda/11.1
 source activate yolov7
 cd yolov7_strongSORT
 
-for f in /share/home/tj14034/data/fqh/code/advTracker/yolov7_main/inference/cars/output_add_0.001_*/ ; do
-srun python track.py --source $f --save-vid --classes 0 2 5 7
-done
-
-for f in /share/home/tj14034/data/fqh/code/advTracker/yolov7_main/inference/cars/output_add_0.002_*/ ; do
-srun python track.py --source $f --save-vid --classes 0 2 5 7
-done
-
-for f in /share/home/tj14034/data/fqh/code/advTracker/yolov7_main/inference/cars/output_add_0.005_*/ ; do
-srun python track.py --source $f --save-vid --classes 0 2 5 7
-done
-
-for f in /share/home/tj14034/data/fqh/code/advTracker/yolov7_main/inference/cars/output_add_0.0005_*/ ; do
+for f in ./yolov7/inference/cars/output_add_0.001_*/ ; do
 srun python track.py --source $f --save-vid --classes 0 2 5 7
 done
